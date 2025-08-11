@@ -1,75 +1,50 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  color: white;
 }
 
-.header {
+.aot {
   background-image: url("./img/1_hero/JPG/hero_bg.jpg");
-  background-position: center;
-  background-size: cover;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.nav-container {
+header {
   display: flex;
-  height: 112px;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
-  width: 100%;
+  right: 0;
+  font-size: 24px;
+  padding-left: 80px;
+  padding-right: 80px;
+  height: 80;
+  padding-top: 32px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
   width: 64px;
   height: 64px;
-  display: flex;
 }
 
-.menu {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  display: flex;
-  gap: 60px;
-  align-items: center;
-}
-
-.menu a {
+.navlink {
   color: white;
   text-decoration: none;
-  filter: drop-shadow(2px 6px 8px rgb(0, 0, 0, 0.5));
-}
-
-.menu a:hover {
-  color: #9f0908;
-}
-
-.hero-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
-}
-
-.hero-title {
-  font-size: 80px;
-  font-family: "Raleway", bold;
-  color: white;
-  margin: 0;
-}
-
-.hero-subtitle {
-  font-size: 24px;
-  font-family: "Raleway", sans-serif;
-  color: white;
 }
 
 .phone-icon {
@@ -81,90 +56,111 @@ body {
   background-color: #9f0908;
   border: 2px solid white;
   border-radius: 8px;
-  display: flex;
-  width: 210px;
-  height: 45px;
-  align-items: center;
-  justify-content: center;
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  height: 40px;
+}
+
+.navlink:hover {
+  color: #e9635c;
 }
 
 .phone-btn:hover {
+  cursor: pointer;
   background-color: #e9635c;
 }
 
-.order-title {
-  display: flex;
-  justify-content: center;
-  color: #9f0908;
+h1 {
+  font-size: 96px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   font-family: "Raleway", bold;
-  font-size: 80px;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+/*Order Section*/
+
+.order-title {
+  text-align: center;
+  font-family: "Raleway", bold;
+  text-align: center;
+}
+
+.order-title h2 {
   margin: 0;
   padding-top: 120px;
+  padding-bottom: 64px;
+  color: #9f0908;
+  font-size: 80px;
 }
 
 .order-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly
 }
 
 .order-icon {
   width: 128px;
+  height: 128px;
   padding-bottom: 16px;
-  padding-top: 64px;
 }
 
 .order-text {
   font-size: 56px;
   font-family: "Economica", bold;
-  padding-bottom: 120px;
+  color: black;
   text-align: center;
+  padding-bottom: 120px;
 }
 
-.order-noodle {
+.order-column {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.order-broth {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/*Menu Section*/
 
-.order-topping {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu-section {
+.menu-container {
   background-image: url("./img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.menu-title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.menu-title {
-  display: flex;
-  justify-content: center;
-  color: #9f0908;
-  font-family: "Raleway", bold;
-  font-size: 80px;
-  margin: 0;
   padding-top: 120px;
-  padding-bottom: 64px;
 }
 
-.menu1-container {
+.menu-container h2 {
+  margin: 0;
+  color: #9f0908;
+  font-size: 80px;
+  font-family: "Raleway", bold;
+}
+
+.menu-icon {
+  width: 352px;
+  height: 352px;
+}
+
+.menu-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 56px;
+  padding-top: 64px;
+  gap: 80px;
+}
+
+.menu-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -172,15 +168,7 @@ body {
   gap: 80px;
 }
 
-.menu2-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 56px;
-  gap: 80px;
-}
-
-.menu3-container {
+.menu-3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,6 +180,7 @@ th {
   font-size: 56px;
   font-family: "Economica", bold;
   padding-bottom: 16px;
+  color: black;
 }
 
 td {
@@ -203,10 +192,8 @@ td {
 tr {
   padding-bottom: 8px;
 }
-.menu-icon {
-  width: 352px;
-  height: 352px;
-}
+
+/*Find Us Section*/
 
 .findussection {
   display: flex;
@@ -235,7 +222,7 @@ tr {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: black;
   padding-bottom: 64px;
 }
 
@@ -246,13 +233,14 @@ tr {
   padding-bottom: 4px;
 }
 
+/*Footer Section*/
+
 .footersection {
   align-items: center;
   display: flex;
   background-color: #000000;
-  height: 140px;
+  height: 144px;
   justify-content: space-between;
-
   background-color: black;
 }
 
@@ -261,7 +249,6 @@ tr {
 }
 
 .media-icon {
-  width: 40px;
   height: 40px;
 }
 
@@ -276,78 +263,4 @@ tr {
   align-items: center;
   gap: 10px;
   padding-right: 160px;
-}
-
-@media (min-width: 320px) {
-    
-}
-
-@media (max-width: 800px) {
-  .hide-mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 750px) {
-  .menu-column {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu2-icon-reverse {
-    flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 765px) {
-  .footersection {
-    justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .media-section {
-    padding-right: 0;
-    padding-top: 10px;
-  }
-  .footer-blum {
-    padding: 0;
-  }
-}
-@media (max-width: 640px) {
-  h1 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 630px) {
-  .order-title {
-    text-align: center;
-    padding-bottom: 32px;
-  }
-  .order-container {
-    flex-direction: column;
-  }
-  .order-icon {
-    padding: 0;
-    width: 200px;
-  }
-  .order-text {
-    padding-bottom: 20px;
-  }
-  .order-text-3 {
-    padding-bottom: 120px;
-  }
-}
-
-@media (max-width: 450px) {
-  .menu-title {
-    text-align: center;
-  }
-  .findussection {
-    text-align: center;
-  }
-  .findus-sub {
-    flex-direction: column;
-    text-align: center;
-  }
 }
