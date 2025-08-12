@@ -26,8 +26,7 @@ header {
   font-size: 24px;
   padding-left: 80px;
   padding-right: 80px;
-  height: 80;
-  padding-top: 32px;
+  height: 112px;
 }
 
 nav {
@@ -60,6 +59,7 @@ nav {
   text-decoration: none;
   width: 200px;
   height: 40px;
+  align-items: center;
 }
 
 .navlink:hover {
@@ -91,9 +91,6 @@ h1 {
   text-align: center;
   font-family: "Raleway", bold;
   text-align: center;
-}
-
-.order-title h2 {
   margin: 0;
   padding-top: 120px;
   padding-bottom: 64px;
@@ -103,7 +100,7 @@ h1 {
 
 .order-container {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
 .order-icon {
@@ -139,7 +136,7 @@ h1 {
   padding-top: 120px;
 }
 
-.menu-container h2 {
+.menu-title {
   margin: 0;
   color: #9f0908;
   font-size: 80px;
@@ -223,7 +220,6 @@ tr {
   justify-content: center;
   align-items: center;
   color: black;
-  padding-bottom: 64px;
 }
 
 .googlemaps {
@@ -263,4 +259,172 @@ tr {
   align-items: center;
   gap: 10px;
   padding-right: 160px;
+}
+
+@media (max-width: 1280px) and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    word-wrap: break-word;
+    font-size: 72px;
+    overflow-x: hidden;
+  }
+  .tablet-hide-subtitle {
+    font-size: 20px;
+  }
+  .tablet-hide-nav {
+    display: none;
+  }
+  .tablet-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .tablet-phone-btn {
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    width: 180px;
+  }
+  .tablet-hide-order-h2 {
+    font-size: 64px;
+    padding-bottom: 48px;
+    padding-top: 96px;
+  }
+  .tablet-hide-order-icon {
+    width: 112px;
+    padding-bottom: 8px;
+  }
+  .tablet-hide-order-text {
+    font-size: 32px;
+    font-family: "Economica", bold;
+    padding-bottom: 96px;
+  }
+  .tablet-hide-menu-container {
+    padding-top: 96px;
+  }
+  .tablet-hide-menu-title {
+    font-size: 64px;
+  }
+  .tablet-hide-menu-1 {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    gap: 24px;
+  }
+  .tablet-hide-menu-2 {
+    padding-bottom: 32px;
+    gap: 24px;
+  }
+  .tablet-hide-menu-3 {
+    padding-bottom: 96px;
+    gap: 24px;
+  }
+  th {
+    font-size: 32px;
+  }
+  td {
+    font-size: 24px;
+  }
+  .tablet-hide-menu-icon {
+    width: 352px;
+    height: 352px;
+  }
+  .tablet-hide-findus-title {
+    padding-top: 96px;
+    padding-bottom: 8px;
+    font-size: 64px;
+  }
+  .tablet-hide-findus-adresse {
+    padding-bottom: 48px;
+    font-size: 20px;
+  }
+  .tablet-hide-footer-icon {
+    height: 44px;
+  }
+  .tablet-hide-media-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 44px;
+    word-wrap: break-word;
+  }
+  .mobile-hide-subtitle {
+    font-size: 16px;
+  }
+  .tablet-hide-nav {
+    display: none;
+  }
+  .mobile-icon {
+    width: 40px;
+    height: 40px;
+  }
+  header {
+    height: 64px;
+  }
+  .mobile-hide-order-h2 {
+    font-size: 40px;
+    padding-top: 72px;
+  }
+  .mobile-hide-order-text {
+    padding-bottom: 32px;
+    font-size: 32px;
+  }
+  .mobile-hide-order-container {
+    flex-direction: column;
+  }
+  .mobile-hide-menu-container {
+    padding-top: 72px;
+  }
+  .mobile-hide-menu-title {
+    font-size: 40px;
+  }
+  .mobile-hide-menu-1 {
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+  .mobile-hide-menu-2 {
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+  .mobile-hide-menu-3 {
+    padding-top: 24px;
+    padding-bottom: 72px;
+  }
+  .mobile-hide-menu-icon {
+    width: 343px;
+    height: 343px;
+  }
+  .mobile-hide-findus-title {
+    padding-top: 72px;
+    padding-bottom: 8px;
+    font-size: 40px;
+  }
+  .mobile-hide-findus-adresse {
+    padding-bottom: 40px;
+    font-size: 16px;
+  }
+  .mobile-hide-footersection {
+    height: 86px;
+  }
+  .mobile-hide-footer-blum {
+    object-fit: cover;
+    object-position: left;
+    width: 42px;
+    height: 40px;
+  }
+  .menu-2-colum-reverse {
+    flex-direction: column-reverse;
+  }
+  .menu-colum {
+    flex-direction: column;
+  }
 }
