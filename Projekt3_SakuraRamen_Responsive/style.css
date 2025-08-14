@@ -276,9 +276,7 @@ tr {
     padding: 0;
   }
   h1 {
-    word-wrap: break-word;
     font-size: 72px;
-    overflow-x: hidden;
   }
   .th-subtitle {
     font-size: 20px;
@@ -365,7 +363,6 @@ tr {
   }
   h1 {
     font-size: 44px;
-    word-wrap: break-word;
   }
   .mh-subtitle {
     font-size: 16px;
@@ -486,6 +483,10 @@ tr {
     width: 300px;
     height: 300px;
   }
+    h1 {
+    font-size: 40px;
+    white-space: nowrap;
+}
 }
 
 @media (max-width: 800px) {
