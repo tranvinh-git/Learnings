@@ -9,6 +9,9 @@
     <script src="./conditional_code.js"></script>
     <script src="./functions.js"></script>
     <script src="./objects.js"></script>
+    <script src="./debugger.js"></script>
+    <script src="./scopes.js"></script>
+    <script src="./arrays_loop.js"></script>
     <style>
         .green_bg{
             background-color: brown;
@@ -22,12 +25,14 @@
             height: 25px;
             background-color: rgb(147, 98, 26);
             text-align: center;
-
+        }
+        .d_none{
+            display: none;
         }
     </style>
 </head>
-<body>
-    <h1 id="website_title">Der Titel der Website</h1>
+<body onload="initArrays()">
+    <h1 onclick="console.log(1)" id="website_title">Der Titel der Website</h1>
 
     <div class="green_bg" id="test_div"></div>
 
@@ -37,8 +42,24 @@
 
     <p calss="p-tag" id="pTag"></p>
 
-
     <p id="2pTag"></p>
+
+    <p id="our_ptag">ich bin das p tag</p>
+
+    <button onclick="toggleDNone('button')">bitte ausführen</button><br>
+
+
+    // Events Varianten <br>
+    <input type="text" onkeydown="console.log('keydown')"><br>
+    <input type="text" onkeyup="console.log('keyup')"><br>
+    <input type="text" onfocus="console.log('140378')"><br>
+    <input type="checkbox" onchange="console.log(100)"><br>
+
+    <button id="demo" onmouseover="myScript">onmousover</button><br><br>
+    
+    <p id="debugger_log">0</p>
+
+    <button onclick="init()">Start Code</button>
 
 </body>
 <script src="./dom_manupulation.js"></script>

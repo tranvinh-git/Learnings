@@ -1,5 +1,5 @@
 let title = document.getElementById("website_title");
-title.innerHTML = " noch neuer Titel";
+title.innerHTML = "neuer Titel";
 
 
 document.getElementById("test_div").innerHTML = "<p>test</p>";
@@ -23,3 +23,22 @@ document.getElementById("2pTag").innerHTML = "<p>ganz genau</p>";
 document.getElementById("2pTag").classList.add("p-tag");
 
 document.getElementById("pTag").classList.add("p-tag");
+
+// Klick Button um was verschinden zu lassen wenn man drauf klickt!
+
+function toggleDNone(id){
+    document.getElementById(id).classList.toggle("d_none");
+}
+
+document.getElementById("demo").onmouseover = function() {mouseOver()};
+document.getElementById("demo").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+}
+
+
