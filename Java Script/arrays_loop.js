@@ -81,3 +81,14 @@ function initArrays(){
         singleRef.innerText = index;
      }
 }
+
+function initArrays(){
+
+    let refList1 = document.getElementsByClassName("green_box");
+
+       for (let index = 0; index < refList1.length; index++) {
+        const singleRef1 = refList1[index];
+        singleRef1.innerText = index;
+        
+    }
+}
