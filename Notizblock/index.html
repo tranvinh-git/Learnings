@@ -3,19 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="./scripts/standard.css" />
+    
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/note.css" />
     <title>Notizblock</title>
   </head>
-  <body>
+  <body onload="renderNotes()">
     <header>
-      <h1>Notizblock</h1>
+      <h1>Notes</h1>
+      <div id="content">
+
+      </div>
+      <h2>Trash</h2>
+      <div id="trash_content">
+
+      </div>
     </header>
     <main>
       <section>
         <h2>Notiz 1</h2>
-        <p>Inhalt der ersten Notiz.</p>
+        <input id="note_input" type="text">
+        <button onclick="addNote()">Notiz speichern</button>
       </section>
       <section>
         <h2>Notiz 2</h2>
@@ -24,7 +32,6 @@
       <section>
         <h2>Notiz 3</h2>
         <p>Buttons Styles</p>
-        <button type="submit">Button</button>
       </section>
       <aside>
         <h3>Zusätzliche Infos</h3>
@@ -34,5 +41,6 @@
     <footer>
       <p>&copy; 2025 Notizblock</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

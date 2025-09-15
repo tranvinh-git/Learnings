@@ -1,0 +1,23 @@
+button {
+    width: 100px;
+    height: 35px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+}

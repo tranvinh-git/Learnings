@@ -3,7 +3,7 @@
 let myDivison = 10/5;
 console.log(myDivison);
 
-let myMulty = 10 * 5;
+let myMulti = 10 * 5;
 console.log(myMulty)
 
 let myPlus = 10 + 10;

@@ -28,4 +28,4 @@ let myBoolean = true // NUR, true oder false, für abfragen wichtig!
 
 let myArray = [2,5,"asdf"]; // eine Liste
 
-let myObjekt = {age : 47, height : 171}; // eine Liste mit kay/value Paaren
+let myObjekt = {age : 47, height : 171}; // eine Liste mit key/value Paaren
