@@ -10,8 +10,13 @@ document.getElementById("test_div").classList.add("green_bg");
 
 
 // Button innerhalb des Divs mit id="button" erstellen
-document.getElementById("button").innerHTML = '<button id="meinbBtton">Klick mich!</button>';
+document.getElementById("button").innerHTML = '<button id="meinButton">Klick mich!</button>';
 // ...existing code...
+
+document.getElementById('button_test').innerHTML = '<button id="meinTestBTN">Button_Test</button>';
+
+document.getElementById('meinTestBTN').classList.add("green_bg")
+
 
 
 console.log(document.getElementById("test_input").value);

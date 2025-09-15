@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Grundlagen</title>
-    <script src="./basics.js"></script>
-    <script src="./uebungen.js"></script>
-    <script src="./conditional_code.js"></script>
-    <script src="./functions.js"></script>
-    <script src="./objects.js"></script>
-    <script src="./debugger.js"></script>
-    <script src="./scopes.js"></script>
-    <script src="./arrays_loop.js"></script>
+    <script src="./basics1.js"></script>
+    <script src="./uebungen1.js"></script>
+    <script src="./conditional_code1.js"></script>
+    <script src="./functions1.js"></script>
+    <script src="./objects1.js"></script>
+    <script src="./debugger1.js"></script>
+    <script src="./scopes1.js"></script>
+    <script src="./arrays_loop1.js"></script>
+    <script src="./filter1.js"></script>
+    <script src="./test.js"></script>
     <style>
         .green_bg{
             background-color: brown;
@@ -44,12 +46,14 @@
         }
     </style>
 </head>
-<body onload="initArrays()">
+<body onload="(myObjectArr)">
     <h1 onclick="console.log(1)" id="website_title">Der Titel der Website</h1>
 
-    <div class="green_bg" id="test_div"></div>
-
-    <div id="button"></div>
+    <div class="green_bg" id="test_div"></div><br>
+<br>
+    <div id="myContent" >Content</div>
+<br>
+    <div id="button"></div><br>
 
     <input id="test_input" type="numbers" value="20">
 
@@ -59,8 +63,9 @@
 
     <p id="our_ptag">ich bin das p tag</p>
 
-    <button onclick="toggleDNone('button')">bitte ausführen</button><br>
+    <button onclick="toggleDNone('website_title')">bitte ausführen</button><br>
 
+        <div id="button_test"></div>
 
     // Events Varianten <br>
     <input type="text" onkeydown="console.log('keydown')"><br>
@@ -83,6 +88,7 @@
     <div class="green_box green_fill"></div>
     <div class="green_box"></div>
 
+<script src="./dom_manupulation1.js"></script>
 </body>
-<script src="./dom_manupulation.js"></script>
+
 </html
